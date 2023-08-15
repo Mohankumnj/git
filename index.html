@@ -1,0 +1,478 @@
+<html lang="en-US"><head><script async="" class="cnvr_coreid_partner" src="https://ats.rlcdn.com/ats.js"></script><script async="" src="https://secure.cdn.fastclick.net/js/cnvr-coreid/latest/coreid.min.js"></script><script type="text/javascript" async="" src="https://static.criteo.net/js/ld/publishertag.prebid.135.js"></script>
+<title>Jenkins Tutorial | Tutorialspoint</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes">
+<meta name="Keywords" content="Tutorial, Jenkins,  HTML, Python, CSS, SQL, JavaScript, Perl, PHP, Java, C, C++, C#, jQuery, Bootstrap, Colors, XML, MySQL, Icons, NodeJS, React, Graphics, Angular, R, AI, Git, Machine Learning, Data Science, Tutorials, Programming, Data Structure, Algorithms, Web Development, Training, Learning, Quiz, Exercises, Courses, References, Computer Science, Management, Finance, Examples, Articles, Demos, Tips, Website">
+<meta name="Description" content="Jenkins Tutorial - Jenkins is a powerful application that allows continuous integration and continuous delivery of projects, regardless of the platform you are working on. It is a free source that can handle any kind of build or continuous integration. You can integrate Jenkins with a number of testing and deployment">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<meta property="og:image" content="https://www.tutorialspoint.com/images/tp_big_logo.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="400">
+<meta property="og:image:height" content="234">
+<meta property="og:title" content="Jenkins Tutorial">
+<meta property="og:description" content="Jenkins Tutorial - Jenkins is a powerful application that allows continuous integration and continuous delivery of projects, regardless of the platform you are working on. It is a free source that can handle any kind of build or continuous integration. You can integrate Jenkins with a number of testing and deployment">
+<link rel="canonical" href="https://www.tutorialspoint.com/jenkins/index.htm">
+<link id="style-switch" rel="stylesheet" href="/static/css/purge/style-min.css?v=6.05">
+<link rel="stylesheet" href="/static/css/custom.css?v=8.19.7"> 
+<style>ul.toc li.heading, .back-top, a.demo, .home-intro-sub{background:#232323; color:#fff;}  ul.toc li.heading:hover{background:#232323;} .btn-grey-border{background:#232323; color:#fff; border:1px solid #232323;} .course-box{background:#232323;} .qa-content{padding:0px 0px 0px 0px!important;} a.demo{background:#232323!important;} @media (max-width: 1199.98px){.navbar-expand-xl .navbar-brand .navbar-brand-item{height:38px!important; width:auto;}} .tp-btn .fa-comments{margin-right:4px!important;}</style>
+<script async="" src="https://secure.cdn.fastclick.net/js/cnvr-launcher/latest/launcher.min.js"></script><script src="https://rules.quantcount.com/rules-p-54Nt-1NAaEEe0.js" async=""></script><script src="https://secure.quantserve.com/quant.js" async="" type="text/javascript"></script><script src="//bat.bing.com/bat.js" async=""></script><script id="adv" data-cfasync="false">(function(w, d) { var s = d.createElement('script'); s.src = '//cdn.adpushup.com/40046/adpushup.js'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script><script src="//cdn.adpushup.com/40046/adpushup.js" type="text/javascript" async=""></script>
+<script>!function(t,e){var i=function(t,e){if(e.body){var n=e.createElement("div");n.className="ad-slot ad gpt-div-slot",n.style="position: absolute; visibility: hidden;",n.textContent="&nbsp;",e.body.appendChild(n),setTimeout((function(){if(0===n.clientHeight){var t=e.createElement("script");t.setAttribute("src","https://delivery.adrecover.com/18107/adRecover.js"),t.setAttribute("type","text/javascript"),t.setAttribute("async",!0),e.head.append(t)}}),0)}else setTimeout((function(){i(t,e)}),15)};i(t,e)}(window,document);</script>
+<script type="text/javascript" async="" id="AddShoppers" src="https://shop.pe/widget/widget_async.js#6434190bc032b7050cd12cdc"></script><link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/google/code-prettify/master/loader/prettify.css"><script type="text/javascript" async="" src="//code.jquery.com/jquery-3.6.0.min.js"></script><script type="text/javascript" charset="UTF-8" async="" src="https://d3rr3d0n31t48m.cloudfront.net/widget/triggerRunner.js?v=6b29f6b"></script><script type="text/javascript" async="" src="https://cdn.adpushup.com/prebid/pb.40046.1687940002717.js"></script><script type="text/javascript" async="" src="https://cdn.adpushup.com/pbuseridscripts/quantcast.js"></script><script type="text/javascript">!function(){window._apPbJs=window._apPbJs||{},window._apPbJs.que=window._apPbJs.que||[];var e=window.adpushup.utils.getQueryParams().enabledBidders;e&&(window.enabledBiddersArray=e.split(","),window.adpushup.utils.log(window.enabledBiddersArray),window._apPbJs.que.push(function(){window._apPbJs.onEvent("beforeRequestBids",function(e){for(var t=[],n=0;n<e.length;n++){for(var o=[],d=e[n],a=d.bids,i=0;i<a.length;i++)-1!==window.enabledBiddersArray.indexOf(a[i].bidder)&&o.push(a[i]);d.bids=o,t.push(d)}})}))}(),function(){var e,d=window,{shouldStopRefreshOnReplaceGptFalseAndHouseLineItem:t,HOUSE_LINE_ITEMS:a}=d.adpushup.config;function n(e){var t,n,o=e.slot.getSlotElementId(),e=e.sourceAgnosticLineItemId&&e.sourceAgnosticLineItemId.toString()||"",o=d.adpTags&&d.adpTags.adpSlots[o];o&&(t=!d.adpushup.utils.shouldReplaceGptSlotOnRefresh(o),{adId:o,dfpAdunitCode:n}=o.optionalParam,t&&Array.isArray(a)&&a.includes(e)&&(d.adpushup.stopRefreshForASlot(o),d.adpushup.utils.sendLogsToDataDogService("REPLACE_GPT_FALSE_PAUSED_ON_HOUSE",{lineItemId:e,dfpAdunitCode:n})))}t&&(d.googletag=d.googletag||{},(e=d.googletag).cmd=e.cmd||[],e.cmd.push(function(){e.pubads().addEventListener("slotRenderEnded",n)}))}(),function(){const u=window.adpushup,p="8340b8d5-9f57-4287-8edd-e8d6a4ace090";function l(e){return e.getBoundingClientRect().top+window.pageYOffset}function d(){u.utils.injectCSSOnPage(`
+			.custom_ap_apex_ad{
+				margin-top:10px !important;
+				margin-bottom:10px !important;
+			}
+		`);var n=document.querySelectorAll("h2");let o=document.getElementById("google-bottom-ads");if(n.length){o=o||n[n.length-1];var d=window.innerHeight;let e=l(o),t=function(){const e=u.$("#adp_top_ads").find("._ap_apex_ad").get(0);if(!e)return 0;const t=e.getAttribute("data-orig-id")||e.getAttribute("id");var n=u.config.manualAds.find(e=>e.id==t);return n?l(e)+n.height:0}();var a,i=["table","pre","ul","ol","li"];for(a of n)if(!function(e,t){for(var n of t)if(e.closest(n))return 1}(a,i)){var s=l(a);if(e-s<d)break;if(d<=s-t){{s=void 0;s=a;const r=document.createElement("div");r.id=p,r.className="custom_ap_apex_ad _ap_apex_ad",s.before(r),u.triggerAd(p)}t=l(a),e=l(o)}}}else u.utils.log("Custom ApTag Insertion: ","bottomAd or targetElements is not present",{bottomAd:o,targetElements:n})}u.que.push(function(){var e=u.utils.getQueryParams().forceApTagInsertion,{customApTagInsertion:t,platform:n}=u.config;let o=t.enabled&&"MOBILE"===n;if((o=t.onlyForceEnabled?e:o)&&u.config.manualAds.find(e=>e.id==p))try{d()}catch(e){u.err.push({message:"Custom ApTag Insertion",error:e}),u.utils.log(e)}})}();</script><script src="//securepubads.g.doubleclick.net/tag/js/gpt.js" async=""></script><script async="" src="//c.amazon-adsystem.com/aax2/apstag.js"></script><script type="text/javascript">(function($){ 
+ var $els = $('div[id^="STICKY"]');
+    $els.each(function(i,$el){
+        var span = $('<span style="cursor:pointer; position: absolute; top: -20px; right: 0; background: rgba(255,255,255,0.3); color: #000; padding: 0 5px;"> Close</span>');
+        $($el).append(span);
+        span.on('click',function(){
+            $(this).parents('.adp_interactive_ad').remove();
+        })
+    })
+ })(adpushup.$)</script><script type="text/javascript" charset="UTF-8" async="" src="https://d3rr3d0n31t48m.cloudfront.net/widget/widget.js?v=39729f0"></script><meta http-equiv="origin-trial" content="A7CQXglZzTrThjGTBEn1rWTxHOEtkWivwzgea+NjyardrwlieSjVuyG44PkYgIPGs8Q9svD8sF3Yedn0BBBjXAkAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A3vKT9yxRPjmXN3DpIiz58f5JykcWHjUo/W7hvmtjgh9jPpQgem9VbADiNovG8NkO6mRmk70Kex8/KUqAYWVWAEAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A4A26Ymj79UVY7C7JGUS4BG1s7MdcDokAQf/RP0paks+RoTYbXHxceT/5L4iKcsleFCngi75YfNRGW2+SpVv1ggAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="As0hBNJ8h++fNYlkq8cTye2qDLyom8NddByiVytXGGD0YVE+2CEuTCpqXMDxdhOMILKoaiaYifwEvCRlJ/9GcQ8AAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="AgRYsXo24ypxC89CJanC+JgEmraCCBebKl8ZmG7Tj5oJNx0cmH0NtNRZs3NB5ubhpbX/bIt7l2zJOSyO64NGmwMAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><script src="https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202308090102/pubads_impl.js?cb=31076971" async=""></script><script src="https://bat.bing.com/p/action/97039426.js" type="text/javascript" async="" data-ueto="ueto_b2751de739"></script><script src="https://tags.crwdcntrl.net/lt/c/16576/sync.min.js"></script><script type="text/javascript" async="" src="https://secure.cdn.fastclick.net/js/cnvr-launcher/latest/launcher-stub.min.js"></script><script async="" src="https://fundingchoicesmessages.google.com/i/103512698?ers=3"></script><script async="" src="https://fundingchoicesmessages.google.com/f/AGSKWxXw3LYLtXoCZ-Oa26e6BzzzysJQEJ1g6CW0VfMiCRw4TEjnIIDcTfbxatmiA-_SeKyx2mEI-NpL9vnSuNLSEbFqfh3z-RAxL1wcAY2BeMwrMjXV98R4GsRgCMdlpekP4A-98sc5MA==?fccs=W1siQUtzUm9sLWxVZzRTZ09zbHE4YTlYNS1yNmdHa0JaOThhQlBqWkFJM1Bid1VuWWIzS1BpN2hJcHpyaGlHVE9nOE5IQjlvNDUyRTltUE9FWC1tYTc3cTRjTkNuaUc5czIwTkdwbnR6S2E3LXJ2aG5Id1R0TElGb2tlb2Z1ME0tS2pkdE5iNVZwdUhhWnpscWI3aHJWOUtKY0RwajZpTXdWZ2tBPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTIwMTMxOTksMTE2MDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbN11dLCJodHRwczovL3d3dy50dXRvcmlhbHNwb2ludC5jb20vamVua2lucy9pbmRleC5odG0iLG51bGwsW1s4LCJULUZEemVRdFI2YyJdLFs5LCJlbi1VUyJdLFsxOSwiMiJdLFsxNywiWzBdIl1dXQ"></script><script esp-signal="true" src="https://cdn.prod.uidapi.com/uid2SecureSignal.js"></script><script esp-signal="true" src="https://cdn-ima.33across.com/ob.js"></script><script async="" src="https://fundingchoicesmessages.google.com/f/AGSKWxWShlLQ9lhJ7M_0mjtA0QL4qPgDZlptgRDWASfL65CaCY7kASj_WS6-p_M2l0KfgKv7h0Y1-rN4GiW1qFKT6pg2brXzUSixgmZHudR9coAfpo5WTVHWdWrQzKfvv0Wwkm72N_Dafg==?fccs=W1siQUtzUm9sLWxVZzRTZ09zbHE4YTlYNS1yNmdHa0JaOThhQlBqWkFJM1Bid1VuWWIzS1BpN2hJcHpyaGlHVE9nOE5IQjlvNDUyRTltUE9FWC1tYTc3cTRjTkNuaUc5czIwTkdwbnR6S2E3LXJ2aG5Id1R0TElGb2tlb2Z1ME0tS2pkdE5iNVZwdUhhWnpscWI3aHJWOUtKY0RwajZpTXdWZ2tBPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTIwMTMxOTksMjQzMDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw5XSxudWxsLDJdLCJodHRwczovL3d3dy50dXRvcmlhbHNwb2ludC5jb20vamVua2lucy9pbmRleC5odG0iLG51bGwsW1s4LCJULUZEemVRdFI2YyJdLFs5LCJlbi1VUyJdLFsxOSwiMiJdLFsxNywiWzBdIl1dXQ"></script><meta http-equiv="origin-trial" content="A/vXSuiuvzsL+Db89QNS/YzqK5Wmzx9oASGHZVMjcaWfVdbB6eUJrJGNr7uhrsmiGhryVjVALd72agYzELDTMAgAAACAeyJvcmlnaW4iOiJodHRwczovL2NyaXRlby5uZXQ6NDQzIiwiZmVhdHVyZSI6IlByaXZhY3lTYW5kYm94QWRzQVBJcyIsImV4cGlyeSI6MTY2OTc2NjM5OSwiaXNTdWJkb21haW4iOnRydWUsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0="><meta http-equiv="origin-trial" content="A0KGawWMfAygakxUO+Z3rulPwK2j0AqkLneiEt4pAI951GYaafeHNV9Ya+PAn7s0y12QSrfTjc9LdOUU+QfkdQwAAACAeyJvcmlnaW4iOiJodHRwczovL2NyaXRlby5jb206NDQzIiwiZmVhdHVyZSI6IlByaXZhY3lTYW5kYm94QWRzQVBJcyIsImV4cGlyeSI6MTY2OTc2NjM5OSwiaXNTdWJkb21haW4iOnRydWUsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0="><meta http-equiv="origin-trial" content="A7CQXglZzTrThjGTBEn1rWTxHOEtkWivwzgea+NjyardrwlieSjVuyG44PkYgIPGs8Q9svD8sF3Yedn0BBBjXAkAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A3vKT9yxRPjmXN3DpIiz58f5JykcWHjUo/W7hvmtjgh9jPpQgem9VbADiNovG8NkO6mRmk70Kex8/KUqAYWVWAEAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A4A26Ymj79UVY7C7JGUS4BG1s7MdcDokAQf/RP0paks+RoTYbXHxceT/5L4iKcsleFCngi75YfNRGW2+SpVv1ggAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="As0hBNJ8h++fNYlkq8cTye2qDLyom8NddByiVytXGGD0YVE+2CEuTCpqXMDxdhOMILKoaiaYifwEvCRlJ/9GcQ8AAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="AgRYsXo24ypxC89CJanC+JgEmraCCBebKl8ZmG7Tj5oJNx0cmH0NtNRZs3NB5ubhpbX/bIt7l2zJOSyO64NGmwMAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><script async="" src="https://fundingchoicesmessages.google.com/f/AGSKWxXdx5SbLKHMPLFGOopzI6PJTTp1BYxwbyVWBoqvIONUxlg470h-itOMs4pqxZP29DZ5__TsQ9u843DCs3H3dVgoGMOug0210jwp6OZA5O4IgtyouP4jOoCy3lfP9_icSIGc_0K_sg==?fccs=W1siQUtzUm9sLWxVZzRTZ09zbHE4YTlYNS1yNmdHa0JaOThhQlBqWkFJM1Bid1VuWWIzS1BpN2hJcHpyaGlHVE9nOE5IQjlvNDUyRTltUE9FWC1tYTc3cTRjTkNuaUc5czIwTkdwbnR6S2E3LXJ2aG5Id1R0TElGb2tlb2Z1ME0tS2pkdE5iNVZwdUhhWnpscWI3aHJWOUtKY0RwajZpTXdWZ2tBPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTIwMTMyMDUsNjAwMDAwMF0sbnVsbCxudWxsLG51bGwsW251bGwsWzcsOSw2XSxudWxsLDIsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cudHV0b3JpYWxzcG9pbnQuY29tL2plbmtpbnMvaW5kZXguaHRtIixudWxsLFtbOCwiVC1GRHplUXRSNmMiXSxbOSwiZW4tVVMiXSxbMTksIjIiXSxbMTcsIlswXSJdXV0"></script><script type="text/javascript" charset="UTF-8" async="" src="https://shopper.shop.pe/input.js"></script></head>
+<body data-new-gr-c-s-check-loaded="14.1119.0" data-gr-ext-installed="">
+<div class="navbar-top navbar-dark d-xl-block py-2 mx-2 mx-md-4 rounded-bottom-4">
+	<div class="container-fluid px-3 px-xl-0">
+		<div class="d-lg-flex justify-content-lg-between align-items-center top-nav-links">
+			<ul class="nav align-items-center justify-content-center">
+				<li class="nav-item" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="bottom" data-bs-original-title="Home Page">
+					<a class="nav-link" href="/index.htm"><i class="fal fa-home-alt me-1"></i> Home</a>
+				</li>
+				<li class="nav-item" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="bottom" data-bs-original-title="Online Coding System">
+					<a class="nav-link" href="/codingground.htm"><i class="fal fa-code me-1"></i> Coding Ground</a>
+				</li>
+				<li class="nav-item" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="bottom" data-bs-original-title="Job Openings">
+					<span><a class="nav-link" href="/about/about_careers.htm"><i class="fal fa-suitcase me-1"></i> Jobs</a></span>
+				</li>
+				<li class="nav-item" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="bottom" data-bs-original-title="Digital Whiteboard">
+					<span><a class="nav-link" href="/whiteboard.htm"><i class="fal fa-chalkboard me-1"></i> Whiteboard</a></span>
+				</li>
+				<li class="nav-item" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="bottom" data-bs-original-title="Developer's Tools">
+					<span><a class="nav-link" href="/online_dev_tools.htm"><i class="fal fa-tools me-1"></i> Tools</a></span>
+				</li>
+				<li class="nav-item" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="bottom" data-bs-original-title="Corporate Trainings">
+					<span><a class="nav-link" href="/business/index.asp"><i class="fal fa-chalkboard-user me-1"></i> Corporate Training</a></span>
+				</li>
+			</ul>
+			<!-- Navbar top Right-->
+			<div class="d-flex align-items-center justify-content-center">
+				<div class="navbar-nav ms-2">
+				  <div class="modeswitch-wrap" id="darkModeSwitch">
+					 <div class="modeswitch-item">
+						<div class="modeswitch-icon">
+							<i class="fal fa-sun toggle-sun"></i>
+							<i class="fal fa-moon toggle-moon"></i>
+						</div>
+					 </div>
+				  </div>
+				</div>
+				<div class="me-3c top-nav-social">
+				  <a class="nav-link" href="/market/teach-with-us.jsp" target="_self" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="bottom" data-bs-original-title="Teach with us"><i class="fal fa-users-class me-2"></i> <span>Teach with us</span></a>
+				</div>
+				<ul class="list-unstyled d-flex mb-0 top-nav-social">
+					<li><a class="px-2 nav-link" rel="nofollow" aria-label="Facebook" href="https://www.facebook.com/tutorialspointindia" target="_blank" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="bottom" data-bs-original-title="Tutorialspoint Facebook"><i class="fab fa-facebook"></i></a> </li>
+					<li><a class="px-2 nav-link" rel="nofollow" aria-label="Instagram" href="https://www.instagram.com/tutorialspoint_/" target="_blank" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="bottom" data-bs-original-title="Tutorialspoint Instagram"><i class="fab fa-instagram"></i></a> </li>
+					<li><a class="px-2 nav-link" rel="nofollow" aria-label="Twitter" href="https://twitter.com/tutorialspoint" target="_blank" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="bottom" data-bs-original-title="Tutorialspoint Twitter"><i class="fab fa-twitter"></i></a> </li>
+					<li><a class="px-2 nav-link" rel="nofollow" aria-label="YouTube" href="https://www.youtube.com/channel/UCVLbzhxVTiTLiVKeGV7WEBg" target="_blank" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="bottom" data-bs-original-title="Tutorialspoint Youtube"><i class="fab fa-youtube"></i></a> </li>
+					<li><a class="px-2 nav-link" rel="nofollow" aria-label="LinkedIn" href="https://www.linkedin.com/authwall?trk=bf&amp;trkInfo=AQEkqX2eckF__gAAAX-wMwEYvrsjBVbEtWQd4pgEdVSzkL22Nik1KEpY_ECWLKDGc41z8IOZWr2Bb0fvJplT60NPBtSw87J6QCpc7wD4qQ3iU13n6xJtBxME5o05Wmpg5JPm5YY=&amp;originalReferer=&amp;sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Ftutorialspoint" target="_blank" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="bottom" data-bs-original-title="Tutorialspoint LinkedIn"><i class="fab fa-linkedin-in"></i></a> </li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<header class="navbar-light navbar-sticky header-static">
+	<nav class="navbar navbar-expand-xl">
+		<div class="container-fluid px-3 px-xl-4">
+			<a class="navbar-brand" href="https://www.tutorialspoint.com/index.htm"><img class="light-mode-item navbar-brand-item" src="/static/images/logo.png?v3" alt="logo"> <img class="dark-mode-item navbar-brand-item" src="/static/images/logo-w.png?v3" alt="logo"></a>
+			<button class="navbar-toggler-toc collapsed ms-auto-toc" type="button" id="btn-tutorial-toc">
+				<span><i class="fal fa-bars"></i></span>
+			</button>
+			<button class="navbar-toggler ms-auto" type="button" id="btn-menu-collapse">
+				<i class="fal fa-user-circle fs-user-size"></i>
+			</button>
+			<div class="navbar-collapse w-100 collapse" id="navbarCollapse">
+				<ul class="navbar-nav navbar-nav-scroll me-auto">
+					<li class="nav-item nav-xs-login">
+						<a class="nav-link"><i class="fal fa-sign-in me-2"></i>Login</a>
+					</li>
+					<li class="nav-item dropdown dropdown-menu-shadow-stacked">
+						<a href="javascript:void(0);" class="nav-link" id="categoryMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fal fa-th-large fs-5 me-xl-1 d-xl-none"></i>
+							<i class="fal fa-th me-1 d-none d-xl-inline-block"></i>
+							<span class="d-xl-inline-block">Category <i class="fal fa-angle-down"></i></span>
+						</a>
+												<ul class="dropdown-menu categories-menu shadow" id="categories-menu">
+							<li><a href="/academic_tutorials.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> Academic Tutorials</a></li>
+							<li><a href="/big_data_tutorials.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> Big Data &amp; Analytics </a></li>
+							<li><a href="/computer_programming_tutorials.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> Computer Programming </a></li>
+							<li><a href="/computer_science_tutorials.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> Computer Science </a></li>
+							<li><a href="/database_tutorials.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> Databases </a></li>
+							<li><a href="/devops_tutorials.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> DevOps </a></li>
+							<li><a href="/digital_marketing_tutorials.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> Digital Marketing </a></li>
+							<li><a href="/engineering_tutorials.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> Engineering Tutorials </a></li>
+							<li><a href="/upsc_ias_exams.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> Exams Syllabus </a></li>
+							<li><a href="/famous_monuments.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> Famous Monuments </a></li>
+							<li><a href="/gate_exams_tutorials.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> GATE Exams </a></li>
+							<li><a href="/latest_technologies.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> Latest Technologies </a></li>
+							<li><a href="/machine_learning_tutorials.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> Machine Learning </a></li>
+							<li><a href="/mainframe_tutorials.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> Mainframe Development </a></li>
+							<li><a href="/management_tutorials.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> Management Tutorials </a></li>
+							<li><a href="/maths_tutorials.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> Mathematics Tutorials</a></li>
+							<li><a href="/microsoft_technologies_tutorials.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> Microsoft Technologies </a></li>
+							<li><a href="/misc_tutorials.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> Misc tutorials </a></li>
+							<li><a href="/mobile_development_tutorials.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> Mobile Development </a></li>
+							<li><a href="/java_technology_tutorials.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> Java Technologies </a></li>
+							<li><a href="/python_technologies_tutorials.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> Python Technologies </a></li>
+							<li><a href="/sap_tutorials.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> SAP Tutorials </a></li>
+							<li><a href="/scripting_language_tutorials.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> Programming Scripts </a></li>
+							<li><a href="/selected_reading.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> Selected Reading </a></li>
+							<li><a href="/software_quality_tutorials.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> Software Quality </a></li>
+							<li><a href="/soft_skill_tutorials.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> Soft Skills </a></li>
+							<li><a href="/telecom_tutorials.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> Telecom Tutorials </a></li>
+							<li><a href="/upsc_ias_exams.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> UPSC IAS Exams </a></li>
+							<li><a href="/web_development_tutorials.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> Web Development </a></li>
+							<li><a href="/sports_tutorials.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> Sports Tutorials </a></li>
+							<li><a href="/xml_technologies_tutorials.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> XML Technologies </a></li>
+							<li><a href="/multi_language_tutorials.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> Multi-Language</a></li>
+							<li><a href="/questions_and_answers.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> Interview Questions</a></li>
+						</ul>
+											</li>
+				</ul>
+				<div class="navbar-collapse">
+					<div class="col-xl-9">
+						<div class="nav my-3 my-xl-0 px-4 flex-nowrap align-items-center">
+							<div class="nav-item w-100">
+								<form class="rounded position-relative">
+									<input class="form-control pe-4 bg-secondary bg-opacity-10 border-0 search-strings" type="search" placeholder="Search tutorials ..." id="search-strings" name="key" data-result="search-results" aria-label="Search">
+									<button type="button" id="btnSearch" class="btn bg-transparent px-2 py-0 position-absolute top-50 end-0 translate-middle-y"><i class="fal fa-search fs-6"></i></button>
+									<div class="search-box search-box-inn" id="search-results" style="display: none;"></div>
+									<div class="clear"></div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<ul class="navbar-nav navbar-nav-scroll">
+					<li class="nav-item">
+						<a class="nav-link" href="/latest/prime-packs" target="_self"><i class="fal fa-cubes me-1"></i>Prime Packs</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/market/index.asp" target="_self"><i class="fal fa-play-circle me-1"></i>Courses</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/latest/ebooks" target="_self"><i class="fal fa-book-reader me-1"></i>eBooks</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/tutorialslibrary.htm" target="_self"><i class="fal fa-books me-1"></i>Library</a>
+					</li>
+					<li class="nav-item">
+					    <a class="nav-link" href="/articles/index.php" target="_self"><i class="fal fa-money-check-edit me-1"></i> Articles</a>
+					</li>
+				</ul>
+			</div>
+			<div class="navbar-nav d-lg-inline-block nav-login">
+			   <a href="/market/login.jsp" class="btn btn-grey-border mb-0"><i class="fal fa-sign-in me-2"></i>Login</a>
+			</div>
+		</div>
+	</nav>
+</header><div id="sticky-space" style="height: 0px;"></div>
+<main class="bg-light pb-4">
+<div class="container-fluid mt-3 px-3 px-xl-3">
+<div class="row g-4">
+<div class="col-sm-12 col-md-4 col-xl-3 ps-0 pe-0 collapse tutorial-toc" id="tocCollapse">
+<div class="card card-body bg-light pt-0 toc-nav">
+<div class="mini-logo">
+<img src="/jenkins/images/jenkins-mini-logo.jpg" alt="Jenkins Tutorial">
+</div>
+<ul class="toc chapters">
+<li class="heading">Jenkins Tutorial</li>
+<li class="current-chapter"><a href="/jenkins/index.htm">Jenkins - Home</a></li>
+<li><a href="/jenkins/jenkins_overview.htm">Jenkins - Overview</a></li>
+<li><a href="/jenkins/jenkins_installation.htm">Jenkins - Installation</a></li>
+<li><a href="/jenkins/jenkins_tomcat_setup.htm">Jenkins - Tomcat Setup</a></li>
+<li><a href="/jenkins/jenkins_git_setup.htm">Jenkins - Git Setup</a></li>
+<li><a href="/jenkins/jenkins_maven_setup.htm">Jenkins - Maven Setup</a></li>
+<li><a href="/jenkins/jenkins_configuration.htm">Jenkins - Configuration</a></li>
+<li><a href="/jenkins/jenkins_management.htm">Jenkins - Management</a></li>
+<li><a href="/jenkins/jenkins_setup_build_jobs.htm">Jenkins - Setup Build Jobs</a></li>
+<li><a href="/jenkins/jenkins_unit_testing.htm">Jenkins - Unit Testing</a></li>
+<li><a href="/jenkins/jenkins_automated_testing.htm">Jenkins - Automated Testing</a></li>
+<li><a href="/jenkins/jenkins_notification.htm">Jenkins - Notification</a></li>
+<li><a href="/jenkins/jenkins_reporting.htm">Jenkins - Reporting</a></li>
+<li><a href="/jenkins/jenkins_code_analysis.htm">Jenkins - Code Analysis</a></li>
+<li><a href="/jenkins/jenkins_distributed_builds.htm">Jenkins - Distributed Builds</a></li>
+<li><a href="/jenkins/jenkins_automated_deployment.htm">Jenkins - Automated Deployment</a></li>
+<li><a href="/jenkins/jenkins_metrics_and_trends.htm">Jenkins - Metrics and Trends</a></li>
+<li><a href="/jenkins/jenkins_server_maintenance.htm">Jenkins - Server Maintenance</a></li>
+<li><a href="/jenkins/jenkins_continuous_deployment.htm">Jenkins - Continuous Deployment</a></li>
+<li><a href="/jenkins/jenkins_managing_plugins.htm">Jenkins - Managing Plugins</a></li>
+<li><a href="/jenkins/jenkins_security.htm">Jenkins - Security</a></li>
+<li><a href="/jenkins/jenkins_backup_plugin.htm">Jenkins - Backup Plugin</a></li>
+<li><a href="/jenkins/jenkins_remote_testing.htm">Jenkins - Remote Testing</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">Jenkins Useful Resources</li>
+<li><a href="/jenkins/jenkins_quick_guide.htm">Jenkins - Quick Guide</a></li>
+<li><a href="/jenkins/jenkins_useful_resources.htm">Jenkins - Useful Resources</a></li>
+<li><a href="/jenkins/jenkins_discussion.htm">Jenkins - Discussion</a></li>
+</ul>
+<ul class="toc reading">
+<li class="sreading">Selected Reading</li>
+<li><a target="_top" href="/upsc_ias_exams.htm">UPSC IAS Exams Notes</a></li>
+<li><a target="_top" href="/developers_best_practices/index.htm">Developer's Best Practices</a></li>
+<li><a target="_top" href="/questions_and_answers.htm">Questions and Answers</a></li>
+<li><a target="_top" href="/effective_resume_writing.htm">Effective Resume Writing</a></li>
+<li><a target="_top" href="/hr_interview_questions/index.htm">HR Interview Questions</a></li>
+<li><a target="_top" href="/computer_glossary.htm">Computer Glossary</a></li>
+<li><a target="_top" href="/computer_whoiswho.htm">Who is Who</a></li>
+</ul>
+<div id="stickyparent" class="d-none d-sm-block">
+<div style="height:250px;width:300px;" id="sticky-ad">
+<div id="00000001-a2f2bf61-4a7e-49aa-ba10-0699434df653" class="_ap_apex_ad" data-section="00000001-a2f2bf61-4a7e-49aa-ba10-0699434df653" data-orig-id="430c9911-782f-495d-88f9-69f58ca8c9a4" data-render-time="1692013197608" data-ap-network="adpTags" style="text-align: center; margin: 10px auto; width: 300px; height: 250px; overflow: hidden; display: block;">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("430c9911-782f-495d-88f9-69f58ca8c9a4");
+});
+</script>
+<div id="ADP_40046_300x250_00000001-a2f2bf61-4a7e-49aa-ba10-0699434df653" style="text-align: center; margin: 0px auto; width: initial; height: initial;" data-google-query-id="COmP1q2I3IADFQa3aAodIaIMFQ">
+
+<div id="google_ads_iframe_/103512698,60931893/21875371528_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/103512698,60931893/21875371528_0" name="google_ads_iframe_/103512698,60931893/21875371528_0" title="3rd party ad content" width="0px" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" role="region" aria-label="Advertisement" tabindex="0" style="border: 0px; vertical-align: bottom;" data-google-container-id="1" data-load-complete="true"></iframe></div></div></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Tutorial ToC Ends Here -->
+
+<!-- Tutorial Content Starts Here -->
+<div class="col-sm-12 col-md-8 col-xl-6 rounded-3 tutorial-content" id="mainContent">
+<div class="cover">
+<img class="img-responsive" src="/jenkins/images/jenkins.jpg" alt="Jenkins Tutorial">
+</div>
+<h1>Jenkins Tutorial</h1>
+<div class="center-aligned tutorial-menu">
+<form action="/job_search.php" method="POST">
+<input type="hidden" name="search_string" value="Jenkins">
+<button class="tp-btn"><i class="fal fa-file-pdf"></i> <a href="/jenkins/jenkins_pdf_version.htm">PDF Version</a></button>
+<button class="tp-btn"><i class="fal fa-book-reader"></i> <a href="/jenkins/jenkins_quick_guide.htm">Quick Guide</a></button>
+<button class="tp-btn"><i class="fal fa-external-link"></i> <a href="/jenkins/jenkins_useful_resources.htm">Resources</a></button>
+<button type="submit" class="tp-btn"><i class="fal fa-search-dollar"></i> Job Search</button>
+<button class="tp-btn"><i class="fal fa-comments"></i> <a href="/jenkins/jenkins_discussion.htm">Discussion</a></button>
+</form>
+</div>
+<p>Jenkins is a powerful application that allows continuous integration and continuous delivery of projects, regardless of the platform you are working on. It is a free source that can handle any kind of build or continuous integration. You can integrate Jenkins with a number of testing and deployment technologies. In this tutorial, we would explain how you can use Jenkins to build and test your software projects continuously.</p>
+<h1>Audience</h1>
+<p>This tutorial is going to help all those software testers who would like to learn how to build and test their projects continuously in order to help the developers to integrate the changes to the project as quickly as possible and obtain fresh builds.</p>
+<h1>Prerequisites</h1>
+<p>Jenkins is a popular tool for performing continuous integration of software projects. This is a preliminary tutorial that covers the most fundamental concepts of Jenkins. Any software professional having a good understanding of Software Development Life Cycle should benefit from this tutorial.</p>
+<div class="d-flex justify-content-between border-bottom border-top py-2" id="bottom_navigation">
+<a href="/jenkins/index.htm" class="pre-btn"><i class="fal fa-chevron-circle-left"></i> Previous Page</a>
+<a id="print-page" href="#" class="pre-btn d-none d-sm-block"><i class="fal fa-print"></i> Print Page</a>
+<a href="/jenkins/jenkins_overview.htm" class="nxt-btn">Next Page <i class="fal fa-chevron-circle-right"></i>&nbsp;</a>
+</div>
+			<div class="google-bottom-ads" id="google-bottom-ads">
+				<div>Advertisements</div>
+				<div>
+					<div id="adp_bottom_ads"><div id="00000001-dc69daa7-35c7-4ec9-8c56-56eb5195d90d" class="_ap_apex_ad" data-section="00000001-dc69daa7-35c7-4ec9-8c56-56eb5195d90d" data-orig-id="4951d1d6-24d4-4a31-afb7-2c22c489eae1" data-render-time="1692013197625" data-ap-network="adpTags" style="text-align: center; margin: 0px auto; display: block;"><div id="ADP_40046_responsivexresponsive_00000001-dc69daa7-35c7-4ec9-8c56-56eb5195d90d" style="text-align: center; margin: 0 auto;" data-google-query-id="CJbR2a2I3IADFQa3aAodIaIMFQ">
+
+<div id="google_ads_iframe_/103512698,60931893/22614721936_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/103512698,60931893/22614721936_0" name="google_ads_iframe_/103512698,60931893/22614721936_0" title="3rd party ad content" width="620" height="400" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" role="region" aria-label="Advertisement" tabindex="0" style="border: 0px; vertical-align: bottom;" data-google-container-id="2" data-load-complete="true"></iframe></div></div></div></div>
+					<script>
+						var adPos = document.getElementById('adp_bottom_ads');
+						var mobile_ad_id = "6d621d7e-9531-4f26-810f-68af67dc6366";
+						var desktop_ad_id = "4951d1d6-24d4-4a31-afb7-2c22c489eae1";
+						var adpushup = adpushup || {};
+						adpushup.que = adpushup.que || [];
+						adpushup.que.push(function() {
+							var ad_id = window.innerWidth <= 768 ? mobile_ad_id : desktop_ad_id;
+							adPos.innerHTML = '<div id="' + ad_id + '" class="_ap_apex_ad"></div>';
+							adpushup.triggerAd(ad_id);
+						});
+					</script>
+				</div>
+			</div>
+		</div>
+	<!-- Tutorial Content Ends Here -->
+
+	<!-- Right Column Starts Here -->
+	<div class="col-sm-6 col-md-3 col-xl-3">
+				<div class="data-sticky" id="google-right-ads">
+			<div class="google-right-ad" style="margin: 0px auto !important;margin-top:5px;min-height:280px!important">
+				<div id="00000001-4b63cbc0-ffb1-45e9-8480-209c9a2c5ad4" class="_ap_apex_ad" data-section="00000001-4b63cbc0-ffb1-45e9-8480-209c9a2c5ad4" data-orig-id="2557b9b8-4c1f-4586-a953-f123dbd2ed8e" data-render-time="1692013197635" data-ap-network="adpTags" data-refresh-time="1692013197636" data-timeout="17" style="text-align: center; margin: 0px auto; width: 336px; height: 280px; overflow: hidden; display: block;">
+					<script>
+						if( window.innerWidth > 768 ){
+						   var adpushup = adpushup || {};
+						   adpushup.que = adpushup.que || [];
+						   adpushup.que.push(function() {
+						   adpushup.triggerAd("2557b9b8-4c1f-4586-a953-f123dbd2ed8e");
+						   });
+						}
+					</script>
+				<div id="ADP_40046_336x280_00000001-4b63cbc0-ffb1-45e9-8480-209c9a2c5ad4" style="text-align: center; margin: 0 auto;" data-google-query-id="CJjR2a2I3IADFQa3aAodIaIMFQ">
+
+<div id="google_ads_iframe_/103512698,60931893/22875532726_0__container__" style="border: 0pt none; display: inline-block; width: 300px; height: 250px;"><iframe frameborder="0" src="https://16269d58663c7323e212beb21ceff37b.safeframe.googlesyndication.com/safeframe/1-0-40/html/container.html" id="google_ads_iframe_/103512698,60931893/22875532726_0" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" width="300" height="250" data-is-safeframe="true" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" role="region" aria-label="Advertisement" tabindex="0" data-google-container-id="3" style="border: 0px; vertical-align: bottom;" data-load-complete="true"></iframe></div></div></div>
+			</div>
+			<div class="google-right-ad" style="margin-top:16px;min-height:280px!important">
+				<div id="00000001-02640f7a-909a-426d-a105-bca7ede8cba2" class="_ap_apex_ad" data-section="00000001-02640f7a-909a-426d-a105-bca7ede8cba2" data-orig-id="b078e6a3-e1b7-40fe-b690-11ac441ad2d5" data-render-time="1692013197647" data-ap-network="adpTags" data-refresh-time="1692013197648" data-timeout="20" style="text-align: center; margin: 0px auto; width: 336px; height: 280px; overflow: hidden; display: block;">
+					<script>
+						if( window.innerWidth > 768 ){
+						   var adpushup = adpushup || {};
+						   adpushup.que = adpushup.que || [];
+						   adpushup.que.push(function() {
+						   adpushup.triggerAd("b078e6a3-e1b7-40fe-b690-11ac441ad2d5");
+						   });
+						}
+					</script>
+				<div id="ADP_40046_336x280_00000001-02640f7a-909a-426d-a105-bca7ede8cba2" style="text-align: center; margin: 0 auto;" data-google-query-id="CJnR2a2I3IADFQa3aAodIaIMFQ">
+
+<div id="google_ads_iframe_/103512698,60931893/22875574808_0__container__" style="border: 0pt none; display: inline-block; width: 300px; height: 250px;"><iframe frameborder="0" src="https://16269d58663c7323e212beb21ceff37b.safeframe.googlesyndication.com/safeframe/1-0-40/html/container.html" id="google_ads_iframe_/103512698,60931893/22875574808_0" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" width="300" height="250" data-is-safeframe="true" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" role="region" aria-label="Advertisement" tabindex="0" data-google-container-id="4" style="border: 0px; vertical-align: bottom;" data-load-complete="true"></iframe></div></div></div>
+			</div>
+			<div class="google-right-ad" style="margin-top:16px;margin-bottom:15px;min-height:600px!important">
+				<div id="00000001-def9fe69-a0d3-4c91-9a5e-b765cf6f94b5" class="_ap_apex_ad" data-section="00000001-def9fe69-a0d3-4c91-9a5e-b765cf6f94b5" data-orig-id="8f8814c2-d64c-4d26-9cb9-543653c0b48f" data-render-time="1692013197656" data-ap-network="adpTags" style="text-align: center; margin: 10px auto; width: 300px; height: 600px; overflow: hidden; display: block;">
+					<script>
+						if( window.innerWidth > 768 ){
+						   var adpushup = adpushup || {};
+						   adpushup.que = adpushup.que || [];
+						   adpushup.que.push(function() {
+						   adpushup.triggerAd("8f8814c2-d64c-4d26-9cb9-543653c0b48f");
+						   });
+						}
+					</script>
+				<div id="ADP_40046_300x600_00000001-def9fe69-a0d3-4c91-9a5e-b765cf6f94b5" style="text-align: center; margin: 0 auto;" data-google-query-id="CJrR2a2I3IADFQa3aAodIaIMFQ">
+
+<div id="google_ads_iframe_/103512698,60931893/21875371402_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/103512698,60931893/21875371402_0" name="google_ads_iframe_/103512698,60931893/21875371402_0" title="3rd party ad content" width="300" height="600" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" role="region" aria-label="Advertisement" tabindex="0" style="border: 0px; vertical-align: bottom;" data-google-container-id="5" data-load-complete="true"></iframe></div></div></div>
+			</div>
+			<!-- Right Column Ends Here -->
+		</div>
+	</div>
+</div>
+</div>
+</main>
+
+<footer class="py-3 card navbar-dark border-top" id="footer">
+	<!-- ======================= Annual Membership -->
+	<div class="py-4 bg-white">
+		<div class="container">
+			<div class="row g-4">
+			<!-- Action box item -->
+				<div class="col-lg-6 position-relative overflow-hidden">
+					<a href="https://www.tutorialspoint.com/market/business/subscription.jsp" target="_blank" title="Annual Membership">
+						<div class="bg-primary bg-opacity-10 rounded-3 p-5 h-100">
+							<div class="position-absolute bottom-0 end-0 me-3">
+								<img src="/images/annual-membership-wraps.svg" class="h-100px h-sm-200px" alt="Annual Membership" style="border-bottom-right-radius:10px;">
+							</div>
+							<div class="row">
+								<div class="col-sm-8 position-relative">
+									<h3 class="mb-1">Annual Membership</h3>
+									<p class="mb-3 h5 fw-light lead">Enjoy unlimited access on 5500+ Hand Picked Quality Video Courses</p>
+									<div class="btn btn-business mb-0"><i class="fal fa-check"></i> Subscribe Now</div>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<!-- Action box item -->
+				<div class="col-lg-6 position-relative overflow-hidden">
+					<a href="https://www.tutorialspoint.com/business/index.asp#demoRequest" target="_blank" title="Business Pack">
+						<div class="bg-secondary rounded-3 bg-opacity-10 p-5 h-100">
+							<div class="position-absolute bottom-0 end-0 me-3">
+								<img src="/images/business-banner-wraps.svg" class="h-100px h-sm-200px" alt="Training for a Team">
+							</div>
+							<div class="row">
+								<div class="col-sm-8 position-relative">
+									<h3 class="mb-1">Training for a Team</h3>
+									<p class="mb-3 h5 fw-light lead">Affordable solution to train a team and make them project ready.</p>
+									<div class="btn btn-warning mb-0"><i class="fal fa-check me-1"></i> Request a Demo</div>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- ======================= Annual Membership -->
+	<div class="container">
+		<div class="row g-4">
+			<div class="col-lg-12 text-center">
+				<a class="me-0 pb-4" href="https://www.tutorialspoint.com/index.htm">
+					<img class="light-mode-item" src="/static/images/logo.png?v=9.01" alt="Tutorials Point" style="height:42px;">
+					<img class="dark-mode-item" src="/static/images/logo-w.png?v=9.10" alt="Tutorials Point" style="height:42px;">
+				</a>
+				<ul class="nav justify-content-center py-3 mt-md-0 ">
+					<li class="nav-item"><a class="nav-link fw-bold" href="/about/index.htm"><i class="fal fa-globe"></i> About us</a></li>
+					<li class="nav-item"><a class="nav-link fw-bold" href="/about/return_refund_policy.htm"> <i class="fal fa-check"></i> Refund Policy</a></li>
+					<li class="nav-item"><a class="nav-link fw-bold" href="/about/about_terms_of_use.htm"><i class="fal fa-check"></i> Terms of use</a></li>
+					<li class="nav-item"><a class="nav-link fw-bold" href="/about/about_privacy.htm"> <i class="fal fa-shield-check"></i> Privacy Policy</a></li>
+					<li class="nav-item"><a class="nav-link fw-bold" href="/about/faq.htm"><i class="fal fa-question-circle"></i> FAQ's</a></li>
+					<li class="nav-item"><a class="nav-link fw-bold" href="/about/contact_us.htm"><i class="fal fa-map-marker-alt"></i> Contact</a></li>
+				</ul>
+				<p class="small">Copyright © Tutorials Point (India) Private Limited. All Rights Reserved.</p>
+			</div>
+			<div id="privacy-banner" style="display: inherit;">
+				<div>
+					<p>We make use of First and third party cookies to improve our user experience. By using this website, you agree with our Cookies Policy.
+						<a id="banner-accept" href="#">Agree</a>
+						<a id="banner-learn" href="/about/about_cookies.htm" target="_blank">Learn more</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<div class="back-top">
+<i class="fal fa-angle-up position-absolute top-50 start-50 translate-middle"></i>
+</div>
+<script async="" src="/static/js/script-min.js?v=0.40"></script>
+<script type="text/javascript">
+    var AddShoppersWidgetOptions = { 'loadCss': false, 'pushResponse': false };
+    (!function(){
+        var t=document.createElement("script");
+        t.type="text/javascript",
+        t.async=!0,
+        t.id="AddShoppers",
+        t.src="https://shop.pe/widget/widget_async.js#6434190bc032b7050cd12cdc",
+        document.getElementsByTagName("head")[0].appendChild(t)
+    }());
+</script>
+<script>
+  (function(w,d,t,r,u)
+  {
+    var f,n,i;
+    w[u]=w[u]||[],f=function()
+    {
+      var o={ti:"97039426", enableAutoSpaTracking: true};
+      o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")
+    },
+    n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function()
+    {
+      var s=this.readyState;
+      s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)
+    },
+    i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)
+  })
+  (window,document,"script","//bat.bing.com/bat.js","uetq");
+</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-EX9ZP4VY84"></script>
+<script>
+     window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+     gtag('js', new Date());
+     gtag('config', 'G-EX9ZP4VY84');
+</script><iframe src="https://16269d58663c7323e212beb21ceff37b.safeframe.googlesyndication.com/safeframe/1-0-40/html/container.html" style="visibility: hidden; display: none;"></iframe>
+
+
+<div class="ad-slot ad gpt-div-slot" style="position: absolute; visibility: hidden;">&amp;nbsp;</div><div style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon362502775673"><img style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon465584156870" width="0" height="0" alt="" src="https://bat.bing.com/action/0?ti=97039426&amp;Ver=2&amp;mid=b9b171fe-5528-4587-9af7-4322b0aec823&amp;sid=893194c03a9011eea98d6f06aba9a3b9&amp;vid=7e7bfca02c3a11eeae895d3d4e772eec&amp;vids=0&amp;msclkid=N&amp;uach=pv%3D10.0.0&amp;pi=918639831&amp;lg=en-US&amp;sw=1366&amp;sh=768&amp;sc=24&amp;tl=Jenkins%20Tutorial%20%7C%20Tutorialspoint&amp;p=https%3A%2F%2Fwww.tutorialspoint.com%2Fjenkins%2Findex.htm&amp;r=https%3A%2F%2Fwww.tutorialspoint.com%2Fjenkins%2Fjenkins_git_setup.htm&amp;lt=666&amp;evt=pageLoad&amp;sv=1&amp;rn=13121"></div><iframe name="googlefcPresent" style="display: none; width: 0px; height: 0px; border: none; z-index: -1000; left: -1000px; top: -1000px;"></iframe><iframe src="https://s.amazon-adsystem.com/iu3?cm3ppd=1&amp;d=dtb-pub&amp;csif=t&amp;dl=rbd" style="display: none;"></iframe><iframe name="__tcfapiLocator" src="about:blank" style="display: none; width: 0px; height: 0px; border: none; z-index: -1000; left: -1000px; top: -1000px;"></iframe><iframe name="googlefcInactive" src="about:blank" style="display: none; width: 0px; height: 0px; border: none; z-index: -1000; left: -1000px; top: -1000px;"></iframe><iframe name="googlefcLoaded" src="about:blank" style="display: none; width: 0px; height: 0px; border: none; z-index: -1000; left: -1000px; top: -1000px;"></iframe><iframe name="google_ads_top_frame" id="google_ads_top_frame" style="display: none; position: fixed; left: -999px; top: -999px; width: 0px; height: 0px;"></iframe><iframe src="https://gumi.criteo.com/syncframe?origin=publishertag&amp;topUrl=www.tutorialspoint.com&amp;gdpr=0&amp;gdpr_consent=#{&quot;uid&quot;:{&quot;origin&quot;:0},&quot;lwid&quot;:{&quot;origin&quot;:0},&quot;bundle&quot;:{&quot;value&quot;:&quot;UzCyZl8lMkZQOVlxZkoyOTVURnd6c0pFYmdZUVFXTjFPbVpsamUwUk1LQkJuS2JjOCUyQjlSS2VheUkzc3VNWDBySEdVd3pDZUJERyUyRldmdEJTTTg3R2lnJTJGazElMkZ1eW9MSTl5ZXFDeEJMSFZnTHg4dGt0MUtCZ2pwbXZwMFZjeHJBcUhmRzZlakFlJTJCSEIlMkI0OGJ4OHRaNTFIaU91SlFrcnJzZnFsem1OeGNtcjc4OTZDc1VjNCUzRA&quot;,&quot;origin&quot;:3},&quot;optout&quot;:{&quot;value&quot;:false,&quot;origin&quot;:0},&quot;sid&quot;:{&quot;origin&quot;:0},&quot;tld&quot;:&quot;tutorialspoint.com&quot;,&quot;topUrl&quot;:&quot;www.tutorialspoint.com&quot;,&quot;version&quot;:135,&quot;cw&quot;:true,&quot;lsw&quot;:true,&quot;origin&quot;:&quot;publishertag&quot;,&quot;requestId&quot;:&quot;0.9252664098977523&quot;}" width="0" height="0" frameborder="0" title="Criteo GUM iframe" style="border-width: 0px; margin: 0px; display: none;"></iframe><iframe src="https://www.google.com/recaptcha/api2/aframe" width="0" height="0" style="display: none;"></iframe></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration><iframe sandbox="allow-scripts allow-same-origin" id="188381ec91d923f8" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="https://prebid.a-mo.net/isyn?gdpr_consent=&amp;gdpr=0&amp;us_privacy=&amp;gpp=&amp;gpp_sid=">
+    </iframe><iframe sandbox="allow-scripts allow-same-origin" id="189f5f98aaf662d6" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="https://adpushup-d.openx.net/w/1.0/pd">
+    </iframe><iframe sandbox="allow-scripts allow-same-origin" id="190e049025b5c4e4" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="https://acdn.adnxs.com/dmp/async_usersync.html">
+    </iframe><iframe sandbox="allow-scripts allow-same-origin" id="1917e4d96d7fa298" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="https://js-sec.indexww.com/um/ixmatch.html">
+    </iframe><iframe sandbox="allow-scripts allow-same-origin" id="192e2a5bef942cad" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="https://eb2.3lift.com/sync?">
+    </iframe><iframe sandbox="allow-scripts allow-same-origin" id="193d3fe389e2cbdf" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="https://eus.rubiconproject.com/usync.html">
+    </iframe><iframe sandbox="allow-scripts allow-same-origin" id="194c64cddee2e862" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="https://csync.smilewanted.com">
+    </iframe><iframe sandbox="allow-scripts allow-same-origin" id="195edc44ff0ed40d" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="https://cookies.nextmillmedia.com/sync?type=iframe">
+    </iframe><iframe sandbox="allow-scripts allow-same-origin" id="196a667951bde25f" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="https://contextual.media.net/checksync.php?vsSync=1&amp;cs=8&amp;cv=31&amp;https=1&amp;cid=8CUPEPKI9&amp;prvid=2034%2C2033%2C2031%2C2030%2C112%2C2029%2C233%2C2028%2C2027%2C236%2C2069%2C237%2C117%2C51%2C97%2C55%2C99%2C2045%2C3012%2C2043%2C2040%2C244%2C2039%2C3007%2C246%2C4%2C203%2C446%2C9%2C2055%2C173%2C294%2C251%2C175%2C450%2C132%2C374%2C178%2C255%2C3018%2C3017%2C214%2C3016%2C337%2C338%2C459%2C70%2C77%2C2022%2C2021%2C141%2C262%2C186%2C461%2C222%2C345%2C468%2C10000%2C80%2C108%2C229%2C307&amp;itype=PREBID&amp;purpose1=1&amp;gdprconsent=1&amp;gdpr=0&amp;coppa=0&amp;usp_status=0&amp;usp_consent=1">
+    </iframe><iframe id="google_esf" name="google_esf" src="https://googleads.g.doubleclick.net/pagead/html/r20230809/r20190131/zrt_lookup.html" style="display: none;"></iframe></html>
